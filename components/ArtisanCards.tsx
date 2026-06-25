@@ -57,7 +57,7 @@ export default function ArtisanCards({
                   transition-all duration-700
                   ${
                     isExpanded
-                      ? "h-[520px]"
+                      ? "h-[550px]"
                       : "h-72"
                   }
                 `}
