@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf0d5;
+  --foreground: #331832;
+
+  --primary: #d81e5b;
+  --secondary: #f0544f;
+  --accent: #c6d8d3;
+
+  --card-bg: #fff9ff;
+  --border-color: #fdf0d5c0;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  padding: 0.5rem;
+}
+
+.section {
+  margin-bottom: 6rem;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-playfair);
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-description {
+  color: var(--foreground);
+  max-width: 42rem;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--accent);
+  color: var(--foreground);
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.container-custom {  
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav-link {
+  transition: 0.2s ease;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  background-color: var(--primary);
+}
+
+.nav-link.active {
+  color: var(--secondary);
+  background-color: var(--background);
+  font-weight: 600;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px rgba(0,0,0,0.1);
+}
+
+.content-card {
+  background: var(--card-bg);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: all .5s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.filter-select {
+  background: var(--card-bg);
+  color: var(--primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 220px;
+  cursor: pointer;
+  text-align: center;
+}
+.seller-form {
+  max-width: 300px;
+  margin: 1rem auto;
+}
+.seller-form input, .seller-form textarea, .seller-form select {
+  background: var(--card-bg);
+  color: var(--foreground);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+}
+.seller-form input::placeholder, .seller-form textarea::placeholder {
+  color: var(--primary);
+}
+.seller-form button {
+  width: 100%;
+  align-items: center;
+}
+.message {
+  margin-top: 1rem;
+  color: var(--secondary);
+  text-align: center;
+}
