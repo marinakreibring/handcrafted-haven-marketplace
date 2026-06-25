@@ -3,7 +3,7 @@
 Handcrafted Haven is a web application marketplace for artisans and crafters to showcase and sell handmade products.
 
 ## Live Demo:
-https://my-project.vercel.app
+https://handcrafted-haven-marketplace.vercel.app/
 
 ## Technologies
 - Next.js
